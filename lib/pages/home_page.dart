@@ -2,13 +2,16 @@ import 'dart:ui';
 
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
-import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
   
   final int startTime= 30;
   
+  startTimerBtn(){
+    print("Test");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,6 +37,9 @@ class HomePage extends StatelessWidget {
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
+                  onStart: (){
+                    print("CountDown");
+                  },
                 ),
           ),
         ],
